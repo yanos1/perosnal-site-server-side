@@ -1,6 +1,6 @@
-const postsR = require("./post")
+const postsR = require("../public/post")
 
 exports.routesInit = (app) => {
-    app.use("/post", postsR);
+    app.use("/", postsR);
 
 }

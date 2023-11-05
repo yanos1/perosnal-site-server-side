@@ -7,7 +7,8 @@ const cors = require("cors")
 const { routesInit } = require("./routes/config_routes")
 require("./Database/mongoConnect")
 
-const port = "3012"
+let port = process.env.PORT || 3012
+console.log(process.env.port)
 
 
 app.use(express.json())

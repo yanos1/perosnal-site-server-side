@@ -8,7 +8,6 @@ const { routesInit } = require("./routes/config_routes")
 require("./Database/mongoConnect")
 
 let port = process.env.PORT || 3012
-console.log(process.env.port)
 
 
 app.use(express.json())

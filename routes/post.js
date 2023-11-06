@@ -5,7 +5,7 @@ const router = express.Router()
 
 router.get("/", async (req, res) => {
     console.log("TRYING TO FETCH DATA...")
-    // let data = await postsModel.find({})
+    let data = await postsModel.find({})
     console.log("DATA FECTHED!")
     res.json({ msg: "HEY!" })
 

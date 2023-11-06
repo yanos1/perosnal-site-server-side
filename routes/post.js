@@ -4,8 +4,10 @@ const { postsModel } = require("../model")
 const router = express.Router()
 
 router.get("/", async (req, res) => {
-    let data = await postsModel.find({})
-    res.json(data)
+    console.log("TRYING TO FETCH DATA...")
+    // let data = await postsModel.find({})
+    // console.log("DATA FECTHED!")
+    // res.json(data)
 
 })
 

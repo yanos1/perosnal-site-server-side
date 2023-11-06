@@ -6,7 +6,7 @@ main().catch(err => console.log(err));
 
 async function main() {
     try {
-        await mongoose.connect("mongodb://localhost:27017/PostsDatabase")  //removed /PostsDatabase
+        await mongoose.connect("mongodb://localhost:27017/admin")  //removed /PostsDatabase
     }
     catch (err) {
         console.log("ERROR")

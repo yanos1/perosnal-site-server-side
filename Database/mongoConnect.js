@@ -6,8 +6,7 @@ main().catch(err => console.log(err));
 
 async function main() {
     try {
-        await mongoose.connect(`mongodb+srv://${config.DBUSERNAME}:${config.DBPASSWORD}
-        @cluster0.jktqllf.mongodb.net.report`)  //removed /PostsDatabase
+        await mongoose.connect("mongodb+srv://yan241999:yan241999@cluster0.jktqllf.mongodb.net/PostsDatabase")  //removed /PostsDatabase
     }
     catch (err) {
         console.log("ERROR")
